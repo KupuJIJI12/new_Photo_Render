@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/projectSettingsUpdater.xml
+/modules.xml
+/contentModel.xml
+/.idea.photo-render.Api.iml
+# Datasource local storage ignored files
+/../../../../../../../:\NEWPhoto\photo-render\photo-render.Api\.idea\.idea.photo-render.Api.dir\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

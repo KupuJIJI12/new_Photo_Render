@@ -1,0 +1,8 @@
+C:\Users\User\RiderProjects\photo-render\photo-render.Api\bin\Debug\photo_render.Api.dll
+C:\Users\User\RiderProjects\photo-render\photo-render.Api\bin\Debug\photo_render.Api.pdb
+C:\Users\User\RiderProjects\photo-render\photo-render.Api\bin\Debug\PresentationCore.dll
+C:\Users\User\RiderProjects\photo-render\photo-render.Api\obj\Debug\photo-render.Api.csprojAssemblyReference.cache
+C:\Users\User\RiderProjects\photo-render\photo-render.Api\obj\Debug\photo-render.Api.csproj.CoreCompileInputs.cache
+C:\Users\User\RiderProjects\photo-render\photo-render.Api\obj\Debug\photo-render.Api.csproj.CopyComplete
+C:\Users\User\RiderProjects\photo-render\photo-render.Api\obj\Debug\photo_render.Api.dll
+C:\Users\User\RiderProjects\photo-render\photo-render.Api\obj\Debug\photo_render.Api.pdb
