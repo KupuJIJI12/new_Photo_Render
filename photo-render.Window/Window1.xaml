@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:photo_render.Window"
         mc:Ignorable="d"
-        Title="Astrid Photo Render" Height="600" Width="1000">
+        Title="Photo Render" Height="450" Width="600">
     <Grid>
-        
+        <Menu HorizontalAlignment="Stretch" Height="20" VerticalAlignment="Top">
+            <MenuItem Header="Открыть" Cursor="Hand"  Click="LoadImage_Click"/>
+            <MenuItem Header="Фильтр" Cursor="Hand" HorizontalAlignment="Right">
+                <!-- кнопки для фильтров -->
+                <Button Content="Оттенки серого" Click="Grayscale_Click"/>
+            </MenuItem>
+        </Menu>
+        <Grid HorizontalAlignment="Left" Height="400" Margin="0,20,0,0" VerticalAlignment="Top" Width="400"/>
+
     </Grid>
 </Window>

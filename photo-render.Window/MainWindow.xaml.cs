@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.IO;
 using System.Windows;
 using System.Windows.Media.Imaging;
 using Microsoft.Win32;
@@ -12,6 +13,7 @@ namespace photo_render.Window
     {
         private Bitmap Bitmap { get; set; }
         private PhotoRender _render = PhotoRender.GetInstance();
+        private string _path;
         
         public MainWindow()
         {
@@ -29,15 +31,17 @@ namespace photo_render.Window
             if (dlg.ShowDialog() == true)
             {
                 originalImage.Source = new BitmapImage(new Uri(dlg.FileName));
+                _path = dlg.FileName;
                 filteredImage.Source = null;
             }
         }
         
         private void Grayscale_Click(object sender, RoutedEventArgs e)
         {
-            CreateBitmap();
-            var filter = new GrayScaleFilter(Bitmap.LoadPixels());
-            filteredImage.Source = _render.Render(filter).ToBitmapSource();
+            filteredImage.Source = new BitmapImage(new Uri(_render.Render(new ShadeFilter(_path))));
+            //CreateBitmap();
+            //var filter = new GrayScaleFilter(Bitmap.LoadPixels());
+            //filteredImage.Source = _render.Render(filter).ToBitmapSource();
         }
 
         private void CreateBitmap()

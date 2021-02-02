@@ -1,8 +1,12 @@
 ﻿using photo_render.Api.Bitmap;
+using ImageMagick;
+using ImageMagick.ImageOptimizers;
+using ImageMagick.Configuration;
+using ImageMagick.Defines;
 
 namespace photo_render.Api.Filters
 {
-    public class GrayScaleFilter : IFilter
+    public class GrayScaleFilter
     {
         private Pixel[,] Original { get; }
 
@@ -13,6 +17,7 @@ namespace photo_render.Api.Filters
         
         public System.Drawing.Bitmap Filter()
         {
+            var a = new MagickImage();
             var width = Original.GetLength(0);
             var height = Original.GetLength(1);
             var grayscale = new double[width, height];

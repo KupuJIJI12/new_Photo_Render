@@ -7,15 +7,15 @@
         mc:Ignorable="d"
         Title="Astrid Photo Render" Height="600" Width="1000">
     
-    <Grid ShowGridLines="True">
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="30"></RowDefinition>
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Menu Grid.Row="0" Background="#F9D7FF">
-            <Button Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Content="Открыть" MinWidth="60" MinHeight="30" Margin="-7, 0, -6,0" Cursor="Hand"  Click="LoadImage_Click"/><!--// //-->
-            <MenuItem Header="Фильтр" MinHeight="30" MinWidth="60" Cursor="Hand">
-                <Button Content="Оттенки серого" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Click="Grayscale_Click"/>
+            <Button Content="Открыть" Cursor="Hand"  Click="LoadImage_Click"/><!--// //-->
+            <MenuItem Header="Фильтр" Cursor="Hand">
+                <Button Content="Оттенки серого" Click="Grayscale_Click"/>
                 <!--// <Button Content="Фильтр Собеля" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Click="SobelFilter_Click"/>
                 <Button Content="Резкость" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Click="Sharpness_Click"/>
                 <Button Content="Размытие" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Click="Blur_Click"/>
@@ -25,9 +25,9 @@
                 <Button Content="Яркость/контрастность" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Click="Bright_Click"/>
                 <Button Content="Баланс цветов" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Click="Balance_Click"/> //-->
             </MenuItem>
-            <Button x:Name="SaveImage" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Content="Сохранить как" MinHeight="30" MinWidth="100" Margin="-7, 0, -6,0" Cursor="Hand" /><!--//Click="SaveImage_Click" //-->
-            <Button x:Name="Reboot" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Content="Сбросить" MinHeight="30" MinWidth="100" Margin="-7, 0, -6,0" Cursor="Hand" /><!--//Click="Reboot_Click" //-->
-            <Button x:Name="Save" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Content="Применить" MinHeight="30" MinWidth="100" Margin="-7, 0, -6,0" Cursor="Hand" /><!--//Click="SaveChange_Click" //-->
+            <Button x:Name="SaveImage" Content="Сохранить как" MinHeight="30" MinWidth="100" Margin="-7, 0, -6,0" Cursor="Hand" /><!--//Click="SaveImage_Click" //-->
+            <Button x:Name="Reboot" Content="Сбросить" MinHeight="30" MinWidth="100" Margin="-7, 0, -6,0" Cursor="Hand" /><!--//Click="Reboot_Click" //-->
+            <Button x:Name="Save" Content="Применить" MinHeight="30" MinWidth="100" Margin="-7, 0, -6,0" Cursor="Hand" /><!--//Click="SaveChange_Click" //-->
         </Menu>
         <Grid ShowGridLines="True" Grid.Row="1">
             <Grid.ColumnDefinitions>
