@@ -11,7 +11,8 @@ namespace photo_render.Window
     public partial class MainWindow
     {
         private Bitmap Bitmap { get; set; }
-    
+        private PhotoRender _render = PhotoRender.GetInstance();
+        
         public MainWindow()
         {
             InitializeComponent();
@@ -35,8 +36,8 @@ namespace photo_render.Window
         private void Grayscale_Click(object sender, RoutedEventArgs e)
         {
             CreateBitmap();
-            var image = new GrayScaleFilter(Bitmap.LoadPixels());
-            filteredImage.Source = image.Filter().ToBitmapSource();
+            var filter = new GrayScaleFilter(Bitmap.LoadPixels());
+            filteredImage.Source = _render.Render(filter).ToBitmapSource();
         }
 
         private void CreateBitmap()

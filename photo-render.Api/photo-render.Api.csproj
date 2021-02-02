@@ -33,6 +33,14 @@
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
+        <Reference Include="Magick.NET-Q16-AnyCPU, Version=7.23.1.0, Culture=neutral, PublicKeyToken=2004825badfa91ec">
+          <HintPath>..\packages\Magick.NET-Q16-AnyCPU.7.23.1\lib\net40\Magick.NET-Q16-AnyCPU.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="Magick.NET.Core, Version=6.1.0.0, Culture=neutral, PublicKeyToken=2004825badfa91ec">
+          <HintPath>..\packages\Magick.NET.Core.6.1.0\lib\net40\Magick.NET.Core.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
         <Reference Include="PresentationCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
           <HintPath>..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_32\PresentationCore\v4.0_4.0.0.0__31bf3856ad364e35\PresentationCore.dll</HintPath>
         </Reference>
@@ -56,13 +64,16 @@
         <Compile Include="Bitmap\BitmapConverter.cs" />
         <Compile Include="Bitmap\BitmapMutate.cs" />
         <Compile Include="Bitmap\BitmapSourceConverter.cs" />
-        <Compile Include="Bitmap\Converter.cs" />
+        <Compile Include="Bitmap\PhotoRender.cs" />
         <Compile Include="Bitmap\ImageConverter.cs" />
         <Compile Include="Bitmap\PixelConverter.cs" />
         <Compile Include="Filters\GrayScaleFilter.cs" />
         <Compile Include="Filters\IFilter.cs" />
         <Compile Include="Pixel.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Include="packages.config" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
