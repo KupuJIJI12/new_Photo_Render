@@ -68,6 +68,7 @@
     <Compile Include="Bitmap\PhotoRender.cs" />
     <Compile Include="Bitmap\ImageConverter.cs" />
     <Compile Include="Bitmap\PixelConverter.cs" />
+    <Compile Include="Filters\EdgeFilter.cs" />
     <Compile Include="Filters\GrayScaleFilter.cs" />
     <Compile Include="Filters\IFilter.cs" />
     <Compile Include="Filters\ShadeFilter.cs" />
@@ -76,6 +77,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
