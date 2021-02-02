@@ -1,22 +1,23 @@
-﻿using System;
-using ImageMagick;
+﻿using ImageMagick;
 
 namespace photo_render.Api.Filters
 {
     public class EdgeFilter : IFilter
     {
-        private readonly string _path;
+        public string Path { get; }
 
         public EdgeFilter(string path)
         {
-            _path = path;
+            Path = path;
         }
+
+
         public string Filter()
         {
-            using (var image = new MagickImage(_path))
+            using (var image = new MagickImage(Path))
             {
                 image.Edge(2);
-                image.Write("~\\Images");
+                image.Write("~pic.png");
                 return image.FileName;
             }
         }

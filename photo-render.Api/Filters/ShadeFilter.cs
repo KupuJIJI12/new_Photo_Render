@@ -4,19 +4,19 @@ namespace photo_render.Api.Filters
 {
     public class ShadeFilter : IFilter
     {
-        private readonly string _path;
-
+        public string Path { get; }
+        
         public ShadeFilter(string path)
         {
-            _path = path;
+            Path = path;
         }
+
         public string Filter()
         {
-            using (var image = new MagickImage(_path))
+            using (var image = new MagickImage(Path))
             {
                 image.Shade();
-                
-                image.Write("~\\Images");
+                image.Write("~pic.png");
                 return image.FileName;
             }
         }
