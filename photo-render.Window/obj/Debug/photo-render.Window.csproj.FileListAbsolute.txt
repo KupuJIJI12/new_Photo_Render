@@ -38,3 +38,5 @@ C:\Users\User\RiderProjects\new_Photo_Render\photo-render.Window\obj\Debug\photo
 C:\Users\User\RiderProjects\new_Photo_Render\photo-render.Window\obj\Debug\photo-render.Window.csproj.CopyComplete
 C:\Users\User\RiderProjects\new_Photo_Render\photo-render.Window\obj\Debug\photo_render.Window.exe
 C:\Users\User\RiderProjects\new_Photo_Render\photo-render.Window\obj\Debug\photo_render.Window.pdb
+C:\Users\User\RiderProjects\new_Photo_Render\photo-render.Window\obj\Debug\Window1.g.cs
+C:\Users\User\RiderProjects\new_Photo_Render\photo-render.Window\obj\Debug\Window1.baml

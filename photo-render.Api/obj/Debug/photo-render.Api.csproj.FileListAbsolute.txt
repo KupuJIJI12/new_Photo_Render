@@ -14,3 +14,7 @@ C:\Users\User\RiderProjects\new_Photo_Render\photo-render.Api\obj\Debug\photo-re
 C:\Users\User\RiderProjects\new_Photo_Render\photo-render.Api\obj\Debug\photo-render.Api.csproj.CopyComplete
 C:\Users\User\RiderProjects\new_Photo_Render\photo-render.Api\obj\Debug\photo_render.Api.dll
 C:\Users\User\RiderProjects\new_Photo_Render\photo-render.Api\obj\Debug\photo_render.Api.pdb
+C:\Users\User\RiderProjects\new_Photo_Render\photo-render.Api\bin\Debug\Magick.NET-Q16-AnyCPU.dll
+C:\Users\User\RiderProjects\new_Photo_Render\photo-render.Api\bin\Debug\Magick.NET.Core.dll
+C:\Users\User\RiderProjects\new_Photo_Render\photo-render.Api\bin\Debug\Magick.NET-Q16-AnyCPU.xml
+C:\Users\User\RiderProjects\new_Photo_Render\photo-render.Api\bin\Debug\Magick.NET.Core.xml

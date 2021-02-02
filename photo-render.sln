@@ -1,5 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "photo-render.Api", "photo-render.Api\photo-render.Api.csproj", "{29370A9E-408D-4FA8-8096-4EF9679CD234}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "photo-render.Window", "photo-render.Window\photo-render.Window.csproj", "{6F6759EC-140D-442C-A704-055F1E4BDD10}"
@@ -18,5 +21,11 @@ Global
 		{6F6759EC-140D-442C-A704-055F1E4BDD10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F6759EC-140D-442C-A704-055F1E4BDD10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F6759EC-140D-442C-A704-055F1E4BDD10}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {08D67284-2F2B-4621-B135-E7CD5DB8AD6F}
 	EndGlobalSection
 EndGlobal
