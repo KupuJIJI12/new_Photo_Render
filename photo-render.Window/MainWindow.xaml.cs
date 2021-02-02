@@ -30,25 +30,19 @@ namespace photo_render.Window
 
             if (dlg.ShowDialog() == true)
             {
-                originalImage.Source = new BitmapImage(new Uri(dlg.FileName));
+                image.Source = new BitmapImage(new Uri(dlg.FileName));
                 _path = dlg.FileName;
-                filteredImage.Source = null;
             }
         }
         
-        private void Grayscale_Click(object sender, RoutedEventArgs e)
+        private void ShadeFilter_Click(object sender, RoutedEventArgs e)
         {
-            filteredImage.Source = new BitmapImage(new Uri(_render.Render(new ShadeFilter(_path))));
-            //CreateBitmap();
-            //var filter = new GrayScaleFilter(Bitmap.LoadPixels());
-            //filteredImage.Source = _render.Render(filter).ToBitmapSource();
+            image.Source = new BitmapImage(new Uri(_render.Render(new ShadeFilter(_path))));
         }
 
-        private void CreateBitmap()
+        private void SaveImageAs_Click(object sender, RoutedEventArgs e)
         {
-            if (Bitmap is null)
-                Bitmap = originalImage.ToBitmap();
-            
+            // TODO
         }
     }
 }
