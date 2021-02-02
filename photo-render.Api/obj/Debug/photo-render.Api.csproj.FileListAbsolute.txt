@@ -18,3 +18,14 @@ C:\Users\User\RiderProjects\new_Photo_Render\photo-render.Api\bin\Debug\Magick.N
 C:\Users\User\RiderProjects\new_Photo_Render\photo-render.Api\bin\Debug\Magick.NET.Core.dll
 C:\Users\User\RiderProjects\new_Photo_Render\photo-render.Api\bin\Debug\Magick.NET-Q16-AnyCPU.xml
 C:\Users\User\RiderProjects\new_Photo_Render\photo-render.Api\bin\Debug\Magick.NET.Core.xml
+C:\Users\kiril\Source\Repos\new_Photo_Render\photo-render.Api\bin\Debug\photo_render.dll
+C:\Users\kiril\Source\Repos\new_Photo_Render\photo-render.Api\bin\Debug\photo_render.pdb
+C:\Users\kiril\Source\Repos\new_Photo_Render\photo-render.Api\bin\Debug\Magick.NET-Q16-AnyCPU.dll
+C:\Users\kiril\Source\Repos\new_Photo_Render\photo-render.Api\bin\Debug\Magick.NET.Core.dll
+C:\Users\kiril\Source\Repos\new_Photo_Render\photo-render.Api\bin\Debug\Magick.NET-Q16-AnyCPU.xml
+C:\Users\kiril\Source\Repos\new_Photo_Render\photo-render.Api\bin\Debug\Magick.NET.Core.xml
+C:\Users\kiril\Source\Repos\new_Photo_Render\photo-render.Api\obj\Debug\photo-render.Api.csprojAssemblyReference.cache
+C:\Users\kiril\Source\Repos\new_Photo_Render\photo-render.Api\obj\Debug\photo-render.Api.csproj.CoreCompileInputs.cache
+C:\Users\kiril\Source\Repos\new_Photo_Render\photo-render.Api\obj\Debug\photo-render.Api.csproj.CopyComplete
+C:\Users\kiril\Source\Repos\new_Photo_Render\photo-render.Api\obj\Debug\photo_render.dll
+C:\Users\kiril\Source\Repos\new_Photo_Render\photo-render.Api\obj\Debug\photo_render.pdb
