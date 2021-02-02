@@ -13,6 +13,7 @@ namespace photo_render.Api.Filters
         public GrayScaleFilter(Pixel[,] original)
         {
             Original = original;
+            
         }
         
         public System.Drawing.Bitmap Filter()

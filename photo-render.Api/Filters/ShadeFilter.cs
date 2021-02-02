@@ -15,6 +15,7 @@ namespace photo_render.Api.Filters
             using (var image = new MagickImage(_path))
             {
                 image.Shade();
+                
                 //image.Write(result);
                 return image.FileName;
             }

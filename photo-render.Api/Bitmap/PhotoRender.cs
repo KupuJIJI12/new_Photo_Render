@@ -14,6 +14,7 @@ namespace photo_render.Api.Bitmap
         public static PhotoRender GetInstance() => _instance ??= new PhotoRender();
 
         public string Render(IFilter filter) => filter.Filter();
+        
 
         /*public string F(string fileName)
         {

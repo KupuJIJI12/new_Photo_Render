@@ -48,6 +48,7 @@ namespace photo_render.Window
         {
             if (Bitmap is null)
                 Bitmap = originalImage.ToBitmap();
+            
         }
     }
 }

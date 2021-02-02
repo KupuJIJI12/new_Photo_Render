@@ -6,5 +6,6 @@ namespace photo_render.Api.Filters
     public interface IFilter
     {
         string Filter();
+        
     }
 }
