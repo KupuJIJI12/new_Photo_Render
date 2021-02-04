@@ -1,5 +1,4 @@
 ﻿using System.IO;
-using System.Windows.Controls;
 using ImageMagick;
 using Image = System.Drawing.Image;
 

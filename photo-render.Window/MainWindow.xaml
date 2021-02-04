@@ -26,6 +26,9 @@
                 <ListBoxItem Height="50">
                     <Button Content="Edge" Width="170" Height="40" Click="EdgeFilter_Click"/>
                 </ListBoxItem>
+                <ListBoxItem Height="50">
+                    <Button Content="UnSharp" Width="170" Height="40" Click="UnSharpFilter_Click"/>
+                </ListBoxItem>
             </ListBox>
         </Grid>
     </Grid>

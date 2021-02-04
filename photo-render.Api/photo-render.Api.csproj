@@ -72,6 +72,7 @@
     <Compile Include="Filters\GrayScaleFilter.cs" />
     <Compile Include="Filters\IFilter.cs" />
     <Compile Include="Filters\ShadeFilter.cs" />
+    <Compile Include="Filters\UnSharpFilter.cs" />
     <Compile Include="Pixel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

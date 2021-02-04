@@ -15,7 +15,19 @@ namespace photo_render.Api
 
         public static PhotoRender GetInstance() => _instance ??= new PhotoRender();
 
-        public static BitmapSource Render(IFilter filter) => ImageToBitmapSource(filter.Filter());
+        public BitmapSource Render(IFilter filter)
+        {
+            try
+            {
+                return ImageToBitmapSource(filter.Filter());
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show("Добавьте редактируемое изображение");
+            }
+
+            return new BitmapImage();
+        } 
 
         private static BitmapSource ImageToBitmapSource(Image image) => BitmapToBitmapSource(new Bmp(image));
 

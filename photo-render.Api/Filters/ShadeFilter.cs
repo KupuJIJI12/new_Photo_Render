@@ -1,7 +1,5 @@
 ﻿using System.IO;
-using System.Windows.Controls;
 using ImageMagick;
-using System.Drawing;
 using Image = System.Drawing.Image;
 
 namespace photo_render.Api.Filters
@@ -19,7 +17,7 @@ namespace photo_render.Api.Filters
         {
             using (var image = new MagickImage(Path))
             {
-                image.Shade();
+                image.Shade();;
                 var memoryStream = new MemoryStream(image.ToByteArray());
                 return Image.FromStream(memoryStream);
             }

@@ -33,17 +33,22 @@ namespace photo_render.Window
                 _path = dlg.FileName;
             }
         }
-        
+
         private void ShadeFilter_Click(object sender, RoutedEventArgs e)
         {
-            image.Source = PhotoRender.Render(new ShadeFilter(_path));
+            image.Source = _render.Render(new ShadeFilter(_path));
         }
         
         private void EdgeFilter_Click(object sender, RoutedEventArgs e)
         {
-            image.Source = PhotoRender.Render(new EdgeFilter(_path));
+            image.Source = _render.Render(new EdgeFilter(_path));
         }
-
+        
+        private void UnSharpFilter_Click(object sender, RoutedEventArgs e)
+        {
+            image.Source = _render.Render(new UnSharpFilter(_path));
+        }
+        
         private void SaveImageAs_Click(object sender, RoutedEventArgs e)
         {
             // TODO

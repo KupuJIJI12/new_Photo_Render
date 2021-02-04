@@ -1,6 +1,5 @@
-﻿using System.Drawing;
-using Bmp = System.Drawing.Bitmap;
-using Image = System.Windows.Controls.Image;
+﻿using Bmp = System.Drawing.Bitmap;
+using Image = System.Drawing.Image;
 
 namespace photo_render.Api.Filters
 {
@@ -8,7 +7,7 @@ namespace photo_render.Api.Filters
     {
         string Path { get; }
 
-        System.Drawing.Image Filter();
+        Image Filter();
         
     }
 }
