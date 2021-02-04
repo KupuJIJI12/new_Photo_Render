@@ -1,4 +1,7 @@
-﻿using ImageMagick;
+﻿using System.IO;
+using System.Windows.Controls;
+using ImageMagick;
+using Image = System.Drawing.Image;
 
 namespace photo_render.Api.Filters
 {
@@ -12,13 +15,13 @@ namespace photo_render.Api.Filters
         }
 
 
-        public string Filter()
+        public Image Filter()
         {
             using (var image = new MagickImage(Path))
             {
                 image.Edge(2);
-                image.Write("~pic.png");
-                return image.FileName;
+                var memoryStream = new MemoryStream(image.ToByteArray());
+                return Image.FromStream(memoryStream);
             }
         }
     }

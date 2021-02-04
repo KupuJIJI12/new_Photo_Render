@@ -1,9 +1,10 @@
-﻿using System.Drawing;
-using System.IO;
-using System.Windows.Controls;
-using ImageMagick;
+﻿using System;
+using System.ComponentModel;
+using System.Windows;
+using System.Windows.Media.Imaging;
 using photo_render.Api.Filters;
 using Bmp = System.Drawing.Bitmap;
+using Image = System.Drawing.Image;
 
 namespace photo_render.Api
 {
@@ -11,16 +12,31 @@ namespace photo_render.Api
     {
         private PhotoRender() { }
         private static PhotoRender _instance;
-        private bool _isChanged;
 
         public static PhotoRender GetInstance() => _instance ??= new PhotoRender();
 
-        public string Render(IFilter filter)
+        public static BitmapSource Render(IFilter filter) => ImageToBitmapSource(filter.Filter());
+
+        private static BitmapSource ImageToBitmapSource(Image image) => BitmapToBitmapSource(new Bmp(image));
+
+        private static BitmapSource BitmapToBitmapSource(Bmp source)
         {
-            /*if (_isChanged)
-                File.Delete("pic.png");
-            _isChanged = true;*/
-            return filter.Filter();
+            BitmapSource bitSrc;
+
+            try
+            {
+                bitSrc = System.Windows.Interop.Imaging.CreateBitmapSourceFromHBitmap(
+                    source.GetHbitmap(),
+                    IntPtr.Zero,
+                    Int32Rect.Empty,
+                    BitmapSizeOptions.FromEmptyOptions());
+            }
+            catch (Win32Exception)
+            {
+                bitSrc = null;
+            }
+
+            return bitSrc;
         }
     }
 }

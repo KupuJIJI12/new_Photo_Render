@@ -36,12 +36,12 @@ namespace photo_render.Window
         
         private void ShadeFilter_Click(object sender, RoutedEventArgs e)
         {
-            image.Source = new BitmapImage(new Uri(_render.Render(new ShadeFilter(_path))));
+            image.Source = PhotoRender.Render(new ShadeFilter(_path));
         }
         
         private void EdgeFilter_Click(object sender, RoutedEventArgs e)
         {
-            image.Source = new BitmapImage(new Uri(_render.Render(new EdgeFilter(_path))));
+            image.Source = PhotoRender.Render(new EdgeFilter(_path));
         }
 
         private void SaveImageAs_Click(object sender, RoutedEventArgs e)
