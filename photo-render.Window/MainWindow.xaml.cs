@@ -53,5 +53,15 @@ namespace photo_render.Window
         {
             // TODO
         }
+
+        private void Apply_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Reset_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

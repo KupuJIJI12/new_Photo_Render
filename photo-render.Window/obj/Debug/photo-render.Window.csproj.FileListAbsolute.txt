@@ -18,7 +18,6 @@ C:\Users\User\RiderProjects\photo-render\photo-render.Window\bin\Debug\System.Dr
 C:\Users\User\RiderProjects\photo-render\photo-render.Window\bin\Debug\photo_render.Api.pdb
 C:\Users\User\RiderProjects\photo-render\photo-render.Window\bin\Debug\ru\System.Drawing.resources.dll
 C:\Users\User\RiderProjects\photo-render\photo-render.Window\obj\Debug\photo-render.Window.csproj.CopyComplete
-C:\Users\User\RiderProjects\new_Photo_Render\photo-render.Window\bin\Debug\photo_render.Window.exe.config
 C:\Users\User\RiderProjects\new_Photo_Render\photo-render.Window\bin\Debug\photo_render.Window.exe
 C:\Users\User\RiderProjects\new_Photo_Render\photo-render.Window\bin\Debug\photo_render.Window.pdb
 C:\Users\User\RiderProjects\new_Photo_Render\photo-render.Window\bin\Debug\System.Drawing.dll
