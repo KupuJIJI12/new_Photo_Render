@@ -15,7 +15,7 @@
             <Image Name="image" Stretch="Fill" HorizontalAlignment="Stretch" Height="498" Margin="0,22,0,0" />
          
             <Image Name ="input_image"  Margin="191.825,216.282,0,0" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Fill" Height="104" AllowDrop="True"/>
-            <Rectangle x:Name="input_zone" HorizontalAlignment="Left" Height="483" Margin="10,27,0,0" Stroke="Black" VerticalAlignment="Top" Width="480" AllowDrop="True" Drop="input_zone_Drop" DragLeave="input_zone_DragLeave" DragEnter="input_zone_DragEnter" StrokeThickness="0">
+            <Rectangle x:Name="input_zone" HorizontalAlignment="Left" Height="483" Margin="10,27,0,0" Stroke="Black" VerticalAlignment="Top" Width="480" AllowDrop="True" Drop="InputZoneDrop" DragLeave="InputZoneDropDragLeave" DragEnter="InputZoneDragEnter" StrokeThickness="0">
                 <Rectangle.Fill>
                     <ImageBrush Stretch="None"/>
                 </Rectangle.Fill>

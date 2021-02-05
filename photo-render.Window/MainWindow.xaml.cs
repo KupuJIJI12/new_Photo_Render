@@ -80,7 +80,8 @@ namespace photo_render.Window
         }
 
 
-        private void input_zone_Drop(object sender, DragEventArgs e)
+        //метод используется для отрисовки анимации(хотя мб он и не нужен)
+        private void InputZoneDrop(object sender, DragEventArgs e)
         {
             if(e.Data.GetDataPresent(DataFormats.FileDrop))
             {
@@ -90,12 +91,14 @@ namespace photo_render.Window
             }
         }
 
-        private void input_zone_DragLeave(object sender, DragEventArgs e)
+        //метод используется для замены картинки интерфейса(плюсик)
+        private void InputZoneDropDragLeave(object sender, DragEventArgs e)
         {
             //input_image.Source = new BitmapImage(new Uri("167 - 1670134_ - png - clipart.png")); тож самое
         }
 
-        private void input_zone_DragEnter(object sender, DragEventArgs e)
+        //метод используется отвечает за копирование объекта в Image
+        private void InputZoneDragEnter(object sender, DragEventArgs e)
         {
             var inputImage = (string[]) e.Data.GetData(DataFormats.FileDrop);
             try
