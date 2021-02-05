@@ -4,16 +4,9 @@ namespace photo_render.Api.Filters
 {
     public class ShadeFilter : IFilter
     {
-        public string Path { get; }
-        
-        public ShadeFilter(string path)
+        public string Filter(string path)
         {
-            Path = path;
-        }
-
-        public string Filter()
-        {
-            using (var image = new MagickImage(Path))
+            using (var image = new MagickImage(path))
             {
                 image.Shade();
                 return FilterProcess.GetResult(image);

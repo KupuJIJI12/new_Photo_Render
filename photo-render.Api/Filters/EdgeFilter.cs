@@ -4,16 +4,9 @@ namespace photo_render.Api.Filters
 {
     public class EdgeFilter : IFilter
     {
-        public string Path { get; }
-
-        public EdgeFilter(string path)
+        public string Filter(string path)
         {
-            Path = path;
-        }
-        
-        public string Filter()
-        {
-            using (var image = new MagickImage(Path))
+            using (var image = new MagickImage(path))
             {
                 image.Edge(2);
                 return FilterProcess.GetResult(image);

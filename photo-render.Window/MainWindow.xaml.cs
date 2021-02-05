@@ -35,35 +35,45 @@ namespace photo_render.Window
 
         private void ShadeFilter_Click(object sender, RoutedEventArgs e)
         {
-            image.Source = _render.Render(new ShadeFilter(_path));
+            image.Source = _render.Render(new ShadeFilter(), _path);
         }
         
         private void EdgeFilter_Click(object sender, RoutedEventArgs e)
         {
-            image.Source = _render.Render(new EdgeFilter(_path));
+            image.Source = _render.Render(new EdgeFilter(), _path);
         }
         
         private void UnSharpFilter_Click(object sender, RoutedEventArgs e)
         {
-            image.Source = _render.Render(new UnSharpFilter(_path));
+            image.Source = _render.Render(new UnSharpFilter(), _path);
         }
         
+        /*сохранение фотографии на компьютер
+         реализация будет сделано кем-либо в Api*/
         private void SaveImageAs_Click(object sender, RoutedEventArgs e)
         {
             // TODO
         }
 
+        /*применение фильтра
+         при применении оригинальным изображением станет новое, отфильтрованное
+         при этом, должен быть вызван метод RemoveUnusedTrash(), чтобы освободиться от мусора*/
         private void Apply_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
+        /*сброс фильтров и возврат к оригинальному изображению
+         при сбросе все временные файлы(кроме последнего, см. комментарии) удаляются
+         однако особенность, что последнее фильтрованное фото остается, может сыграть на руку и помочь в реализации
+            метода 'вернуться к предыдущему варианту'*/
         private void Reset_Click(object sender, RoutedEventArgs e)
         {
             image.Source = new BitmapImage(new Uri(_path));
             FileStorage.RemoveUnusedTrash();
         }
 
+        /*метод, который по идее вызывается при закрытии приложения, но что-то работает не так*/
         private void Close_App(object sender, RoutedEventArgs e)
         {
             FileStorage.RemoveTrash();

@@ -1,10 +1,8 @@
 ﻿namespace photo_render.Api.Filters
 {
+    /*Абстракция, которую реализует каждый фильтр*/
     public interface IFilter
     {
-        string Path { get; }
-
-        string Filter();
-        
+        string Filter(string path); // основной метод, который вызывается в рендере
     }
 }

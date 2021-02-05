@@ -4,6 +4,7 @@ using photo_render.Api.Filters;
 
 namespace photo_render.Api
 {
+    /*синглтон, экземпляр которого создается при инициализации окна приложения*/
     public class PhotoRender
     {
         private PhotoRender() { }
@@ -11,9 +12,11 @@ namespace photo_render.Api
 
         public static PhotoRender GetInstance() => _instance ??= new PhotoRender();
 
-        public BitmapSource Render(IFilter filter)
+        /* основной метод, который возвращает новое изображение
+         в него передается любой фильтр, реализующий интерфейс, и пусть к изображению*/
+        public BitmapSource Render(IFilter filter, string path) 
         {
-            return new BitmapImage(new Uri(filter.Filter()));
+            return new BitmapImage(new Uri(filter.Filter(path)));
         }
     }
 }
