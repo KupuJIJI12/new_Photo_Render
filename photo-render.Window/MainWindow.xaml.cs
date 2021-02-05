@@ -31,6 +31,7 @@ namespace photo_render.Window
             {
                 image.Source = new BitmapImage(new Uri(dlg.FileName));
                 _path = dlg.FileName;
+                listBox.IsEnabled = true;
             }
         }
 
@@ -61,7 +62,7 @@ namespace photo_render.Window
 
         private void Reset_Click(object sender, RoutedEventArgs e)
         {
-
+            image.Source = new BitmapImage(new Uri(_path));
         }
     }
 }

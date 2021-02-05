@@ -18,7 +18,7 @@
             <Menu HorizontalAlignment="Stretch" Height="22" VerticalAlignment="Top">
                 <MenuItem Header="                      Filters" Width="192" IsEnabled="False" Foreground="#FFF18C10"/>
             </Menu>
-            <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="440" Margin="0,22,0,0" VerticalAlignment="Top" Width="192" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+            <ListBox x:Name="listBox" IsEnabled="False" HorizontalAlignment="Left" Height="440" Margin="0,22,0,0" VerticalAlignment="Top" Width="192" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
                 <!-- сюда добавлять listBoxItem с фильтрами по тому же принципу -->
                 <!-- Вариант с одной кнопкой:
                     <ListBoxItem Height="50">
