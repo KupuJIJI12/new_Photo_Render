@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Drawing;
-using System.IO;
 using System.Windows;
 using System.Windows.Media.Imaging;
 using Microsoft.Win32;
@@ -19,7 +17,7 @@ namespace photo_render.Window
             InitializeComponent();
         }
 
-        private void LoadImage_Click(object sender, RoutedEventArgs e)
+        private void LoadImage_Click(object sender, EventArgs e)
         {
             var dlg = new OpenFileDialog
             {
@@ -63,6 +61,12 @@ namespace photo_render.Window
         private void Reset_Click(object sender, RoutedEventArgs e)
         {
             image.Source = new BitmapImage(new Uri(_path));
+            FileStorage.RemoveUnusedTrash();
+        }
+
+        private void Close_App(object sender, RoutedEventArgs e)
+        {
+            FileStorage.RemoveTrash();
         }
     }
 }

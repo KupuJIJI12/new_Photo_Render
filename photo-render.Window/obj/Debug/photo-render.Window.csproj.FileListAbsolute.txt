@@ -94,4 +94,3 @@ C:\Users\kiril\Source\Repos\new_Photo_Render\photo-render.Window\bin\Debug\Magic
 C:\Users\kiril\Source\Repos\new_Photo_Render\photo-render.Window\obj\Debug\Brushes.baml
 C:\Users\kiril\Source\Repos\new_Photo_Render\photo-render.Window\obj\Debug\App.baml
 C:\Users\kiril\Source\Repos\new_Photo_Render\photo-render.Window\obj\Debug\DarkOrangeStyle.baml
-C:\Users\User\RiderProjects\new_Photo_Render\photo-render.Window\obj\Debug\Icons.baml

@@ -62,22 +62,15 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bitmap\BitmapConverter.cs" />
-    <Compile Include="Bitmap\BitmapMutate.cs" />
-    <Compile Include="Bitmap\BitmapSourceConverter.cs" />
-    <Compile Include="Bitmap\PhotoRender.cs" />
-    <Compile Include="Bitmap\ImageConverter.cs" />
-    <Compile Include="Bitmap\PixelConverter.cs" />
     <Compile Include="Filters\EdgeFilter.cs" />
-    <Compile Include="Filters\GrayScaleFilter.cs" />
+    <Compile Include="Filters\FilterProcess.cs" />
     <Compile Include="Filters\IFilter.cs" />
     <Compile Include="Filters\ShadeFilter.cs" />
     <Compile Include="Filters\UnSharpFilter.cs" />
-    <Compile Include="Pixel.cs" />
+    <Compile Include="IdGenerator.cs" />
+    <Compile Include="PhotoRender.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Images" />
+    <Compile Include="FileStorage.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

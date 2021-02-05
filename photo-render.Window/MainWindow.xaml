@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:photo_render.Window"
         mc:Ignorable="d"
-        Title="Photo Render" Height="550" Width="708" ResizeMode="NoResize">
+        Title="Photo Render" Height="550" Width="708" ResizeMode="NoResize" Unloaded="Close_App">
     <Grid>
         <Grid HorizontalAlignment="Left" Height="520" Margin="0,0,0,0" VerticalAlignment="Top" Width="500" Background="#FF535353">
             <Menu HorizontalAlignment="Stretch" Height="22" VerticalAlignment="Top">
                 <MenuItem Header="Open" Cursor="Hand"  Click="LoadImage_Click"/>
                 <MenuItem Header="Save as..." Cursor="Hand" HorizontalAlignment="Right" Click="SaveImageAs_Click"/>
             </Menu>
-            <Image Name="image" Stretch="Fill" HorizontalAlignment="Stretch" Height="498" Margin="0,22,0,0" />
+            <Image Name="image" Stretch="Fill" HorizontalAlignment="Stretch" Height="498" Margin="0,22,0,0"/>
         </Grid>
         <Grid HorizontalAlignment="Left" Height="520" Margin="500,0,0,0" VerticalAlignment="Top" Width="192" Background="#FF535353">
             <Menu HorizontalAlignment="Stretch" Height="22" VerticalAlignment="Top">
