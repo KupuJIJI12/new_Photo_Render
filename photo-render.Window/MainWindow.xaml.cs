@@ -101,6 +101,7 @@ namespace photo_render.Window
             try
             {
                 image.Source = new BitmapImage(new Uri(inputImage[0]));
+                listBox.IsEnabled = true;
             }
             catch
             {
