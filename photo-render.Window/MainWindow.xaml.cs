@@ -78,5 +78,34 @@ namespace photo_render.Window
         {
             FileStorage.RemoveTrash();
         }
+
+
+        private void input_zone_Drop(object sender, DragEventArgs e)
+        {
+            if(e.Data.GetDataPresent(DataFormats.FileDrop))
+            {
+                //input_image.Source = new BitmapImage(new Uri("167 - 1670134_ - png - clipart.png")); почему-то не работает. Че-то со ссылкой.
+                e.Effects = DragDropEffects.Copy;
+                 
+            }
+        }
+
+        private void input_zone_DragLeave(object sender, DragEventArgs e)
+        {
+            //input_image.Source = new BitmapImage(new Uri("167 - 1670134_ - png - clipart.png")); тож самое
+        }
+
+        private void input_zone_DragEnter(object sender, DragEventArgs e)
+        {
+            var inputImage = (string[]) e.Data.GetData(DataFormats.FileDrop);
+            try
+            {
+                image.Source = new BitmapImage(new Uri(inputImage[0]));
+            }
+            catch
+            {
+                MessageBox.Show("Что-то пошло не так");
+            }
+        }
     }
 }

@@ -40,3 +40,13 @@ C:\Users\User\RiderProjects\new_Photo_Render\photo-render.Api\obj\Debug\photo_re
 C:\Users\User\RiderProjects\new_Photo_Render\photo-render.Api\obj\Debug\photo_render.pdb
 C:\Users\kiril\Source\Repos\new_Photo_Render\photo-render.Api\bin\Debug\Magick.NET-Q8-AnyCPU.dll
 C:\Users\kiril\Source\Repos\new_Photo_Render\photo-render.Api\bin\Debug\Magick.NET-Q8-AnyCPU.xml
+E:\MyProgrammerProjects\RiderProjects\GitProjects\NewPhotoRender\photo-render.Api\bin\Debug\photo_render.dll
+E:\MyProgrammerProjects\RiderProjects\GitProjects\NewPhotoRender\photo-render.Api\bin\Debug\photo_render.pdb
+E:\MyProgrammerProjects\RiderProjects\GitProjects\NewPhotoRender\photo-render.Api\bin\Debug\Magick.NET-Q8-AnyCPU.dll
+E:\MyProgrammerProjects\RiderProjects\GitProjects\NewPhotoRender\photo-render.Api\bin\Debug\Magick.NET.Core.dll
+E:\MyProgrammerProjects\RiderProjects\GitProjects\NewPhotoRender\photo-render.Api\bin\Debug\Magick.NET-Q8-AnyCPU.xml
+E:\MyProgrammerProjects\RiderProjects\GitProjects\NewPhotoRender\photo-render.Api\bin\Debug\Magick.NET.Core.xml
+E:\MyProgrammerProjects\RiderProjects\GitProjects\NewPhotoRender\photo-render.Api\obj\Debug\photo-render.Api.csprojAssemblyReference.cache
+E:\MyProgrammerProjects\RiderProjects\GitProjects\NewPhotoRender\photo-render.Api\obj\Debug\photo-render.Api.csproj.CopyComplete
+E:\MyProgrammerProjects\RiderProjects\GitProjects\NewPhotoRender\photo-render.Api\obj\Debug\photo_render.dll
+E:\MyProgrammerProjects\RiderProjects\GitProjects\NewPhotoRender\photo-render.Api\obj\Debug\photo_render.pdb

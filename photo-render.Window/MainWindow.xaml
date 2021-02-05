@@ -5,14 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:photo_render.Window"
         mc:Ignorable="d"
-        Title="Photo Render" Height="550" Width="708" ResizeMode="NoResize" Unloaded="Close_App">
+        Title="Photo Render" Height="550" Width="708" ResizeMode="NoResize">
     <Grid>
         <Grid HorizontalAlignment="Left" Height="520" Margin="0,0,0,0" VerticalAlignment="Top" Width="500" Background="#FF535353">
             <Menu HorizontalAlignment="Stretch" Height="22" VerticalAlignment="Top">
                 <MenuItem Header="Open" Cursor="Hand"  Click="LoadImage_Click"/>
                 <MenuItem Header="Save as..." Cursor="Hand" HorizontalAlignment="Right" Click="SaveImageAs_Click"/>
             </Menu>
-            <Image Name="image" Stretch="Fill" HorizontalAlignment="Stretch" Height="498" Margin="0,22,0,0"/>
+            <Image Name="image" Stretch="Fill" HorizontalAlignment="Stretch" Height="498" Margin="0,22,0,0" />
+         
+            <Image Name ="input_image"  Margin="191.825,216.282,0,0" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Fill" Height="104" AllowDrop="True"/>
+            <Rectangle x:Name="input_zone" HorizontalAlignment="Left" Height="483" Margin="10,27,0,0" Stroke="Black" VerticalAlignment="Top" Width="480" AllowDrop="True" Drop="input_zone_Drop" DragLeave="input_zone_DragLeave" DragEnter="input_zone_DragEnter" StrokeThickness="0">
+                <Rectangle.Fill>
+                    <ImageBrush Stretch="None"/>
+                </Rectangle.Fill>
+            </Rectangle>
         </Grid>
         <Grid HorizontalAlignment="Left" Height="520" Margin="500,0,0,0" VerticalAlignment="Top" Width="192" Background="#FF535353">
             <Menu HorizontalAlignment="Stretch" Height="22" VerticalAlignment="Top">
