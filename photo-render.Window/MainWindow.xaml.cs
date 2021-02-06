@@ -1,9 +1,14 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Input;
+using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using Microsoft.Win32;
 using photo_render.Api;
 using photo_render.Api.Filters;
+using Image = System.Windows.Controls.Image;
 
 namespace photo_render.Window
 {
@@ -96,6 +101,29 @@ namespace photo_render.Window
             {
                 MessageBox.Show("Что-то пошло не так");
             }
+        }
+        
+        private void Field_OnMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Right)
+            {
+                var contextMenu = image.ContextMenu;
+                contextMenu.PlacementTarget = image;
+                contextMenu.IsOpen = true;
+            }
+
+            var itemsContMenu =  image.ContextMenu.Items;
+            ((MenuItem) itemsContMenu[0]).IsEnabled = image.Source != null;
+        }
+        
+        private void Copy_OnClick(object sender, RoutedEventArgs e) 
+            => Clipboard.SetImage((BitmapSource) image.Source);
+
+        private void Paste_OnClick(object sender, RoutedEventArgs e)
+        {
+            image.Source = Clipboard.GetImage();
+            if(image.Source != null)
+                listBox.IsEnabled = true;
         }
         
         //Action методы фильтров
