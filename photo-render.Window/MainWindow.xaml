@@ -41,43 +41,43 @@
                 <ListBoxItem Height="50">
                     <Grid Height="50" Width="170">
                         <Button Content="UnSharp" Width="70" Height="40" Click="UnSharpFilter_Click" HorizontalAlignment="Left" Margin="11,0,0,10"/>
-                        <Button Content="Filter" Width="70" Height="40" HorizontalAlignment="Right" Margin="0,0,13,10"/>
+                        <Button Content="Blur" Width="70" Height="40" Click="BlurFilter_Click" HorizontalAlignment="Right" Margin="0,0,13,10"/>
                     </Grid>
                 </ListBoxItem>
                 <ListBoxItem Height="50">
                     <Grid Height="50" Width="170">
-                        <Button Content="Filter"  Width="70" Height="40" HorizontalAlignment="Left"  Margin="11,0,0,10"/>
-                        <Button Content="Filter" Width="70" Height="40" HorizontalAlignment="Right" Margin="0,0,13,10"/>
+                        <Button Content="BlueShift"  Width="70" Height="40" Click="BlueShift_Click" HorizontalAlignment="Left"  Margin="11,0,0,10"/>
+                        <Button Content="CannyEdge" Width="70" Height="40" Click="CannyEdge_Click" HorizontalAlignment="Right" Margin="0,0,13,10"/>
                     </Grid>
                 </ListBoxItem>
                 <ListBoxItem Height="50">
                     <Grid Height="50" Width="170">
-                        <Button Content="Filter"  Width="70" Height="40" HorizontalAlignment="Left"  Margin="11,0,0,10"/>
-                        <Button Content="Filter" Width="70" Height="40" HorizontalAlignment="Right" Margin="0,0,13,10"/>
+                        <Button Content="ContrastStretch"  Width="70" Height="40" Click="ContrastStretch_Click" HorizontalAlignment="Left"  Margin="11,0,0,10"/>
+                        <Button Content="Grayscale" Width="70" Height="40" Click="Grayscale_Click" HorizontalAlignment="Right" Margin="0,0,13,10"/>
                     </Grid>
                 </ListBoxItem>
                 <ListBoxItem Height="50">
                     <Grid Height="50" Width="170">
-                        <Button Content="Filter"  Width="70" Height="40" HorizontalAlignment="Left"  Margin="11,0,0,10"/>
-                        <Button Content="Filter" Width="70" Height="40" HorizontalAlignment="Right" Margin="0,0,13,10"/>
+                        <Button Content="Negative"  Width="70" Height="40" Click="Negative_Click" HorizontalAlignment="Left"  Margin="11,0,0,10"/>
+                        <Button Content="Normalize" Width="70" Height="40" Click="Normalize_Click" HorizontalAlignment="Right" Margin="0,0,13,10"/>
                     </Grid>
                 </ListBoxItem>
                 <ListBoxItem Height="50">
                     <Grid Height="50" Width="170">
-                        <Button Content="Filter"  Width="70" Height="40" HorizontalAlignment="Left"  Margin="11,0,0,10"/>
-                        <Button Content="Filter" Width="70" Height="40" HorizontalAlignment="Right" Margin="0,0,13,10"/>
+                        <Button Content="OilPaint" Width="70" Height="40" Click="OilPaint_Click" HorizontalAlignment="Left"  Margin="11,0,0,10"/>
+                        <Button Content="Posterize" Width="70" Height="40" Click="Posterize_Click" HorizontalAlignment="Right" Margin="0,0,13,10"/>
                     </Grid>
                 </ListBoxItem>
                 <ListBoxItem Height="50">
                     <Grid Height="50" Width="170">
-                        <Button Content="Filter"  Width="70" Height="40" HorizontalAlignment="Left"  Margin="11,0,0,10"/>
-                        <Button Content="Filter" Width="70" Height="40" HorizontalAlignment="Right" Margin="0,0,13,10"/>
+                        <Button Content="Sepia"  Width="70" Height="40" Click="SepiaTone_Click" HorizontalAlignment="Left"  Margin="11,0,0,10"/>
+                        <Button Content="Sharpen" Width="70" Height="40" Click="Sharpen_Click" HorizontalAlignment="Right" Margin="0,0,13,10"/>
                     </Grid>
                 </ListBoxItem>
                 <ListBoxItem Height="50">
                     <Grid Height="50" Width="170">
-                        <Button Content="Filter"  Width="70" Height="40" HorizontalAlignment="Left"  Margin="11,0,0,10"/>
-                        <Button Content="Filter" Width="70" Height="40" HorizontalAlignment="Right" Margin="0,0,13,10"/>
+                        <Button Content="Solarize"  Width="70" Height="40" Click="Solarize_Click" HorizontalAlignment="Left"  Margin="11,0,0,10"/>
+                        <Button Content="WaveletDenoise" Width="70" Height="40" Click="WaveletDenoise_Click" HorizontalAlignment="Right" Margin="0,0,13,10"/>
                     </Grid>
                 </ListBoxItem>
                 <ListBoxItem Height="50">

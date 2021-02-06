@@ -62,11 +62,24 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Filters\BlueShiftFilter.cs" />
+    <Compile Include="Filters\BlurFilter.cs" />
+    <Compile Include="Filters\CannyEdgeFilter.cs" />
+    <Compile Include="Filters\ContrastStretchFilter.cs" />
     <Compile Include="Filters\EdgeFilter.cs" />
     <Compile Include="Filters\FilterProcess.cs" />
+    <Compile Include="Filters\GrayscaleFilter.cs" />
     <Compile Include="Filters\IFilter.cs" />
+    <Compile Include="Filters\NegativeFilter.cs" />
+    <Compile Include="Filters\NormalizeFilter.cs" />
+    <Compile Include="Filters\OilPaintFilter.cs" />
+    <Compile Include="Filters\PosterizeFilter.cs" />
+    <Compile Include="Filters\SepiaToneFilter.cs" />
     <Compile Include="Filters\ShadeFilter.cs" />
+    <Compile Include="Filters\SharpenFilter.cs" />
+    <Compile Include="Filters\SolarizeFilter.cs" />
     <Compile Include="Filters\UnSharpFilter.cs" />
+    <Compile Include="Filters\WaveletDenoiseFilter.cs" />
     <Compile Include="IdGenerator.cs" />
     <Compile Include="PhotoRender.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

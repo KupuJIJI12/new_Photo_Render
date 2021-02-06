@@ -53,7 +53,6 @@ C:\Users\kiril\Source\Repos\new_Photo_Render\photo-render.Window\obj\Debug\photo
 C:\Users\kiril\Source\Repos\new_Photo_Render\photo-render.Window\obj\Debug\photo-render.Window.csproj.CopyComplete
 C:\Users\kiril\Source\Repos\new_Photo_Render\photo-render.Window\obj\Debug\photo_render.Window.exe
 C:\Users\kiril\Source\Repos\new_Photo_Render\photo-render.Window\obj\Debug\photo_render.Window.pdb
-D:\NEWPhoto\photo-render.Window\bin\Debug\photo_render.Window.exe.config
 D:\NEWPhoto\photo-render.Window\bin\Debug\photo_render.Window.exe
 D:\NEWPhoto\photo-render.Window\bin\Debug\photo_render.Window.pdb
 D:\NEWPhoto\photo-render.Window\bin\Debug\photo_render.dll

@@ -33,21 +33,6 @@ namespace photo_render.Window
             }
         }
 
-        private void ShadeFilter_Click(object sender, RoutedEventArgs e)
-        {
-            image.Source = _render.Render(new ShadeFilter(), _path);
-        }
-        
-        private void EdgeFilter_Click(object sender, RoutedEventArgs e)
-        {
-            image.Source = _render.Render(new EdgeFilter(), _path);
-        }
-        
-        private void UnSharpFilter_Click(object sender, RoutedEventArgs e)
-        {
-            image.Source = _render.Render(new UnSharpFilter(), _path);
-        }
-        
         /*сохранение фотографии на компьютер
          реализация будет сделано кем-либо в Api*/
         private void SaveImageAs_Click(object sender, RoutedEventArgs e)
@@ -111,6 +96,87 @@ namespace photo_render.Window
             {
                 MessageBox.Show("Что-то пошло не так");
             }
+        }
+        
+        //Action методы фильтров
+        private void ShadeFilter_Click(object sender, RoutedEventArgs e)
+        {
+            image.Source = _render.Render(new ShadeFilter(), _path);
+        }
+        
+        private void EdgeFilter_Click(object sender, RoutedEventArgs e)
+        {
+            image.Source = _render.Render(new EdgeFilter(), _path);
+        }
+        
+        private void UnSharpFilter_Click(object sender, RoutedEventArgs e)
+        {
+            image.Source = _render.Render(new UnSharpFilter(), _path);
+        }
+
+        private void BlueShift_Click(object sender, RoutedEventArgs e)
+        {
+            image.Source = _render.Render(new BlueShiftFilter(), _path);
+        }
+
+        private void BlurFilter_Click(object sender, RoutedEventArgs e)
+        {
+            image.Source = _render.Render(new BlurFilter(), _path);
+        }
+
+        private void CannyEdge_Click(object sender, RoutedEventArgs e)
+        {
+            image.Source = _render.Render(new CannyEdgeFilter(), _path);
+        }
+
+        private void ContrastStretch_Click(object sender, RoutedEventArgs e)
+        {
+            image.Source = _render.Render(new ContrastStretchFilter(), _path);
+        }
+
+        private void Grayscale_Click(object sender, RoutedEventArgs e)
+        {
+            image.Source = _render.Render(new GrayscaleFilter(), _path);
+        }
+
+        private void Negative_Click(object sender, RoutedEventArgs e)
+        {
+            image.Source = _render.Render(new NegativeFilter(), _path);
+        }
+
+        private void Normalize_Click(object sender, RoutedEventArgs e)
+        {
+            image.Source = _render.Render(new NormalizeFilter(), _path);
+        }
+
+        private void OilPaint_Click(object sender, RoutedEventArgs e)
+        {
+            image.Source = _render.Render(new OilPaintFilter(), _path);
+        }
+
+        private void Posterize_Click(object sender, RoutedEventArgs e)
+        {
+            image.Source = _render.Render(new PosterizeFilter(), _path);
+        }
+
+        private void SepiaTone_Click(object sender, RoutedEventArgs e)
+        {
+            image.Source = _render.Render(new SepiaToneFilter(), _path);
+        }
+
+        private void Sharpen_Click(object sender, RoutedEventArgs e)
+        {
+            image.Source = _render.Render(new SharpenFilter(), _path);
+        }
+
+        private void Solarize_Click(object sender, RoutedEventArgs e)
+        {
+            image.Source = _render.Render(new SolarizeFilter(), _path);
+        }
+
+        private void WaveletDenoise_Click(object sender, RoutedEventArgs e)
+        {
+            image.Source = _render.Render(new WaveletDenoiseFilter(), _path);
         }
     }
 }
